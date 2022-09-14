@@ -1,1 +1,1 @@
-# Hostlify-Landin-Page
+# Hostlify-Landing-Page
