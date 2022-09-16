@@ -599,4 +599,85 @@ Button{
 }
 
 
+.contact{
+  background: #011530;
+  padding: 3%;
+}
+.contact h1{
+  color: #D6A049;
+  text-align: center;
+}
+.container-C{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-Container{
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contact-box-container{
+  background: white;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+  border: 6px solid #D6A049;
+  display: flex;
+  flex-direction: row;
+}
+.content-box-C{
+  margin: 1% 10% 15% 10%;
+  color: black;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.p-float-label{
+  margin-top: 7%;
+}
+.inputC{
+  width: 100%;
+}
+.inputC-email{
+  width: 100%;
+  height: 150px;
+}
+.content-box-C button{
+  margin: 5% 0% 0% 25%;
+  width: 50%;
+  padding: 4% 0 4% 0;
+}
+.content-box-C2{
+  margin: 1% 10% 15% 10%;
+  color: black;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.content-box-C2 h1{
+  text-align: center;
+  color: #D6A049;
+}
+.content-box-C2 h2{
+  text-align: center;
+  color: #D6A049;
+}
+.buttons-container{
+  display: grid;
+  gap: 20px;
+  margin-top: 5%;
+  padding: 0px 30px 40px 10px;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+}
+.buttons-container Button{
+  display: flex;
+  justify-content: center;
+
+}
+
+
 </style>
