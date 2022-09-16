@@ -561,4 +561,42 @@ Button{
 }
 
 
+.OurTeam{
+  background: #011530;
+  text-align: center;
+  padding: 3%;
+}
+.OurTeam h1 {
+  margin:0 0 2% 0;
+  font-size: 70px;
+  color: #D6A049;
+}
+.container-OT{
+  display: grid;
+  justify-content: center;
+  gap: 100px;
+  padding: 0px 200px 0px 200px;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
+.ourTeam-Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ourTeam-Container img{
+  border-radius: 50%;
+  width: 50%;
+}
+.content-box-OT h1{
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+.content-box-OT h2{
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+
 </style>
