@@ -256,4 +256,23 @@ Button{
   font-family: 'Roboto', sans-serif;
 }
 
+.top-header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #011530;
+  height: 130px;
+}
+.top-header img{
+  margin-left: 3%;
+}
+.navMain{
+  margin-left: auto;
+}
+.navMain ul Button{
+  margin-left: 20px;
+  margin-right: 50px;
+  font-size: 22px;
+}
+
 </style>
