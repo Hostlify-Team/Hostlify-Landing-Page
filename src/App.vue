@@ -465,4 +465,100 @@ Button{
 }
 
 
+.priceCalculator{
+  background: #011530;
+  padding: 3%;
+}
+.container-PC{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.priceCalculator-Container{
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.orange-box{
+  border-radius: 25px 25px 0px 0px;
+  background: #D6A049;
+  width: 100%;
+  height: 50px;
+  margin:0;
+}
+.content-box-container{
+  background: white;
+  width: 100%;
+  height: 500px;
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.content-box-PC{
+  margin: 1% 10% 15% 10%;
+  color: black;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.content-box-PC h1{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin: 5% 0 5% 0;
+  color: black;
+}
+.content-box-PC h2{
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: left;
+  margin: 5% 0 5% 0;
+  color: black;
+}
+.content-box-PC h3{
+  font-size: 48px;
+  text-align: center;
+  margin: 5% 0 5% 0;
+  color: black;
+}
+.content-box-PC2{
+  margin: 1% 10% 15% 10%;
+  color: black;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-box-PC2 h1{
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5% 0 5% 0;
+  color: black;
+}
+.content-box-PC2 h2{
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 5% 0 5% 0;
+  color: black;
+}
+.content-box-PC2 h3{
+  font-size: 48px;
+  text-align: center;
+  margin: 5% 0 5% 0;
+  color: black;
+}
+.content-box-PC2 Button{
+  width:50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 18px;
+  color: white;
+}
+
+
 </style>
