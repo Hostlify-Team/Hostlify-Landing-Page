@@ -307,4 +307,32 @@ Button{
 }
 
 
+.about-us{
+  background: #011530;
+  text-align: center;
+  padding: 3%;
+}
+.about-us h1 {
+  margin:0;
+  font-size: 70px;
+  color: #D6A049;
+}
+.about-us div{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about-us div Image{
+  flex:30%;
+}
+.about-us div p{
+  flex:70%;
+  background: white;
+  color:black;
+  margin: auto 5% auto 5%;
+  font-size:28px;
+  text-align: left;
+  padding: 3%;
+}
+
 </style>
