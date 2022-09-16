@@ -11,7 +11,38 @@
 
     <!--4 services-->
 
-    <!--5 plans-->
+    <div class="plans">
+      <h1>Plans</h1>
+      <div class="container-PL">
+        <div class="plans-Container">
+          <div class="orange-box1"/>
+          <div class="content-box">
+            <h1>Standar</h1>
+            <h2>30 rooms</h2>
+            <h3>150 S/ mo*</h3>
+            <Button label="Subscribe" class="p-button-raised"/>
+          </div>
+        </div>
+        <div class="plans-Container">
+          <div class="orange-box2"/>
+          <div class="content-box">
+            <h1>Pro</h1>
+            <h2>50 rooms</h2>
+            <h3>250 S/ mo*</h3>
+            <Button label="Subscribe" class="p-button-raised"/>
+          </div>
+        </div>
+        <div class="plans-Container">
+          <div class="orange-box3"/>
+          <div class="content-box">
+            <h1>Premium</h1>
+            <h2>Unlimited</h2>
+            <h3>400 S/ mo*</h3>
+            <Button label="Subscribe" class="p-button-raised"/>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="priceCalculator">
       <div class="container-PC">
