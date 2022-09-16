@@ -388,4 +388,81 @@ Button{
 }
 
 
+.plans{
+  background: #011530;
+  text-align: center;
+  padding: 3%;
+}
+.plans h1 {
+  margin:0 0 2% 0;
+  font-size: 70px;
+  color: #D6A049;
+}
+.container-PL{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.plans-Container{
+  background: white;
+  width: 400px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.orange-box1{
+  border-radius: 25px 25px 0px 0px;
+  background: #FFC286;
+  width: 100%;
+  height: 50px;
+  margin:0;
+}
+.orange-box2{
+  border-radius: 25px 25px 0px 0px;
+  background: #EA9D51;
+  width: 100%;
+  height: 50px;
+  margin:0;
+}
+.orange-box3{
+  border-radius: 25px 25px 0px 0px;
+  background: #F1C94E;
+  width: 100%;
+  height: 50px;
+  margin:0;
+}
+.content-box{
+  margin: 1% 10% 15% 10%;
+  color: black;
+}
+.content-box h1{
+  font-size: 24px;
+  text-align: left;
+  margin: 5% 0 5% 0;
+  color: black;
+}
+.content-box h2{
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 10%;
+  color: black;
+}
+.content-box h3{
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 10%;
+  color: black;
+}
+.content-box Button{
+  width:50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-right: 80%;
+  font-size: 18px;
+  color: white;
+}
+
+
 </style>
