@@ -4,7 +4,7 @@
 <template>
 
   <header class="top-header">
-    <img src="src/assets/images/Logo.png" height=130 alt="Logo Hostlify" />
+    <img src="/src/assets/images/Logo.png" height=130 alt="Logo Hostlify" />
     <nav class="navMain">
       <ul>
         <Button label="Home" class="p-button-text"/>
@@ -20,7 +20,7 @@
   <div class="layout">
 
     <div class="main">
-      <img class="mainBackground" src="src/assets/images/fondo-principal.jpeg" alt="Logo principal Hostlify" />
+      <img class="mainBackground" src="/src/assets/images/fondo-principal.jpeg" alt="Logo principal Hostlify" />
       <div>
         <h1>The best option as a hotel <br/> manager platflorm</h1>
         <Button label="Try it now" class="p-button-raised p-button-rounded"/>
@@ -30,7 +30,7 @@
     <div class="about-us">
       <h1>About Us</h1>
       <div>
-        <Image src="src/assets/images/Logo.png" alt="Logo Hostlify" />
+        <Image src="/src/assets/images/Logo.png" alt="Logo Hostlify" />
         <p>
           Hostlify is a web application for hotel management that has 2 users called "Manager" and "Hotel guest".<br/>
           The "Manager" will have an interface where you can manage the different rooms, you can see the status of the room and even send services to the room.<br/>
@@ -43,7 +43,7 @@
       <h1>Services</h1>
       <div class="container-SV">
         <div class="services-Container">
-          <img src="src/assets/images/carne.png" alt="Food Service" />
+          <img src="/src/assets/images/carne.png" alt="Food Service" />
           <div>
             <h1>Food Services</h1>
             <p>Enter information you want to share with your guests about the food hall, as well as table reservation options and/or room service with personalized dishes.</p>
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="services-Container">
-          <img src="src/assets/images/bed.png" alt="Food Service" />
+          <img src="/src/assets/images/bed.png" alt="Food Service" />
           <div>
             <h1>Room maintenance</h1>
             <p>Connect the room maintenance service with your guests to simplify their demands</p>
@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="services-Container">
-          <img src="src/assets/images/gimnasio.png" alt="Food Service" />
+          <img src="/src/assets/images/gimnasio.png" alt="Food Service" />
           <div>
             <h1>Recreation area</h1>
             <p>Provide your guest with exact information on the recreational areas in the hotel, in this way your guest can plan their activities and even make reservations for their favorite recreational areas</p>
@@ -128,42 +128,42 @@
     <h1>OurTeam</h1>
     <div class="container-OT">
       <div class="ourTeam-Container">
-        <img src="src/assets/images/Rubio.png">
+        <img src="/src/assets/images/Rubio.png">
         <div class="content-box-OT">
           <h1>Adrian Rubio</h1>
           <h2>Software Engineering Student</h2>
         </div>
       </div>
       <div class="ourTeam-Container">
-        <img src="src/assets/images/Diego.png">
+        <img src="/src/assets/images/Diego.png">
         <div class="content-box-OT">
           <h1>Diego Talledo</h1>
           <h2>Software Engineering Student</h2>
         </div>
       </div>
       <div class="ourTeam-Container">
-        <img src="src/assets/images/Andres.png">
+        <img src="/src/assets/images/Andres.png">
         <div class="content-box-OT">
           <h1>Andres Reynoso</h1>
           <h2>Software Engineering Student</h2>
         </div>
       </div>
       <div class="ourTeam-Container">
-        <img src="src/assets/images/Josef.png">
+        <img src="/src/assets/images/Josef.png">
         <div class="content-box-OT">
           <h1>Josef Romero</h1>
           <h2>Software Engineering Student</h2>
         </div>
       </div>
       <div class="ourTeam-Container">
-        <img src="src/assets/images/Fiorella.png">
+        <img src="/src/assets/images/Fiorella.png">
         <div class="content-box-OT">
           <h1>Fiorella Valencia</h1>
           <h2>Software Engineering Student</h2>
         </div>
       </div>
       <div class="ourTeam-Container">
-        <img src="src/assets/images/Alfredo.png">
+        <img src="/src/assets/images/Alfredo.png">
         <div class="content-box-OT">
           <h1>Alfredo Farro</h1>
           <h2>Software Engineering Student</h2>
@@ -200,19 +200,19 @@
             </div>
             <div class="buttons-container">
               <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="src/assets/images/facebook.PNG" />
+                <img alt="logo" src="/src/assets/images/facebook.png" />
               </Button>
               <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="src/assets/images/linkedin.PNG" />
+                <img alt="logo" src="/src/assets/images/linkedin.png" />
               </Button>
               <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="src/assets/images/twitter.PNG" />
+                <img alt="logo" src="/src/assets/images/twitter.png" />
               </Button>
               <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="src/assets/images/google.PNG" />
+                <img alt="logo" src="/src/assets/images/google.png" />
               </Button>
               <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="src/assets/images/instagram.PNG" />
+                <img alt="logo" src="/src/assets/images/instagram.png" />
               </Button>
             </div>
           </div>
