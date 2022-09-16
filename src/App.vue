@@ -6,7 +6,14 @@
 
   <div class="layout">
     <!--2 main-->
-
+    
+    <div class="main">
+     <img class="mainBackground" src="src/assets/images/fondo-principal.jpeg" alt="Logo principal Hostlify" />
+      <div>
+       <h1>The best option as a hotel <br/> manager platflorm</h1>
+       <Button label="Try it now" class="p-button-raised p-button-rounded"/>
+      </div>
+    </div>
     <!--3 about us-->
     
     <div class="about-us">
