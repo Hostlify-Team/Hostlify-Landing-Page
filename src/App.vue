@@ -8,6 +8,18 @@
     <!--2 main-->
 
     <!--3 about us-->
+    
+    <div class="about-us">
+      <h1>About Us</h1>
+      <div>
+        <Image src="src/assets/images/Logo.png" alt="Logo Hostlify" />
+        <p>
+          Hostlify is a web application for hotel management that has 2 users called "Manager" and "Hotel guest".<br/>
+          The "Manager" will have an interface where you can manage the different rooms, you can see the status of the room and even send services to the room.<br/>
+          The "Hotel guest" will have an interface where you can request room services, obtain information on the recreational areas and reserve spaces in the hotel.
+        </p>
+      </div>
+    </div>
 
     <!--4 services-->
 
