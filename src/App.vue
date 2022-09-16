@@ -241,5 +241,19 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+h2, h3{
+  font-family: 'Roboto', sans-serif;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+Button{
+  font-family: 'Roboto', sans-serif;
+}
 
 </style>
