@@ -2,6 +2,7 @@
 </script>
 
 <template>
+
   <header class="top-header">
     <img src="src/assets/images/Logo.png" height=130 alt="Logo Hostlify" />
     <nav class="navMain">
@@ -17,17 +18,15 @@
   </header>
 
   <div class="layout">
-    <!--2 main-->
-    
+
     <div class="main">
-     <img class="mainBackground" src="src/assets/images/fondo-principal.jpeg" alt="Logo principal Hostlify" />
+      <img class="mainBackground" src="src/assets/images/fondo-principal.jpeg" alt="Logo principal Hostlify" />
       <div>
-       <h1>The best option as a hotel <br/> manager platflorm</h1>
-       <Button label="Try it now" class="p-button-raised p-button-rounded"/>
+        <h1>The best option as a hotel <br/> manager platflorm</h1>
+        <Button label="Try it now" class="p-button-raised p-button-rounded"/>
       </div>
     </div>
-    <!--3 about us-->
-    
+
     <div class="about-us">
       <h1>About Us</h1>
       <div>
@@ -39,8 +38,6 @@
         </p>
       </div>
     </div>
-
-    <!--4 services-->
 
     <div class="services">
       <h1>Services</h1>
@@ -71,7 +68,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="plans">
       <h1>Plans</h1>
       <div class="container-PL">
@@ -276,6 +273,8 @@ Button{
 }
 
 
+
+
 .main{
   display: flex;
   position: relative;
@@ -307,6 +306,10 @@ Button{
 }
 
 
+
+
+
+
 .about-us{
   background: #011530;
   text-align: center;
@@ -334,6 +337,10 @@ Button{
   text-align: left;
   padding: 3%;
 }
+
+
+
+
 
 
 .services{
@@ -386,6 +393,10 @@ Button{
   font-size: 18px;
   color: white;
 }
+
+
+
+
 
 
 .plans{
@@ -463,6 +474,10 @@ Button{
   font-size: 18px;
   color: white;
 }
+
+
+
+
 
 
 .priceCalculator{
@@ -561,6 +576,10 @@ Button{
 }
 
 
+
+
+
+
 .OurTeam{
   background: #011530;
   text-align: center;
@@ -597,6 +616,10 @@ Button{
   color: white;
   font-size: 16px;
 }
+
+
+
+
 
 
 .contact{
@@ -680,4 +703,17 @@ Button{
 }
 
 
+
+
+.footer-container{
+  background: #011530;
+}
+.footer-container p{
+  text-align: center;
+  color: #D6A049;
+}
+.navMain-footer{
+  display: flex;
+  justify-content: center;
+}
 </style>
