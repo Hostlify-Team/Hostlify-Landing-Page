@@ -275,4 +275,36 @@ Button{
   font-size: 22px;
 }
 
+
+.main{
+  display: flex;
+  position: relative;
+}
+.mainBackground{
+  width: 100%;
+  height: 800px;
+}
+.main div {
+  display: flex;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 10%;
+  size: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.main div h1{
+  font-size: 92px;
+  text-shadow: 3px 3px black;
+}
+.main div Button{
+  width: 35%;
+  margin: auto;
+  font-size: 24px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: white;
+}
+
+
 </style>
