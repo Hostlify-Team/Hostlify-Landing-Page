@@ -2,7 +2,19 @@
 </script>
 
 <template>
-  <!--1 top header-->
+  <header class="top-header">
+    <img src="src/assets/images/Logo.png" height=130 alt="Logo Hostlify" />
+    <nav class="navMain">
+      <ul>
+        <Button label="Home" class="p-button-text"/>
+        <Button label="About Us" class="p-button-text"/>
+        <Button label="Services" class="p-button-text"/>
+        <Button label="Plans" class="p-button-text"/>
+        <Button label="Our Team" class="p-button-text"/>
+        <Button label="Contact" class="p-button-text"/>
+      </ul>
+    </nav>
+  </header>
 
   <div class="layout">
     <!--2 main-->
