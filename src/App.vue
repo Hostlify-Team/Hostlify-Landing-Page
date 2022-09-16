@@ -335,4 +335,57 @@ Button{
   padding: 3%;
 }
 
+
+.services{
+  background: #011530;
+  text-align: center;
+  padding: 3%;
+}
+.services h1 {
+  margin:0 0 2% 0;
+  font-size: 70px;
+  color: #D6A049;
+}
+.container-SV{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.services-Container{
+  background: white;
+  width: 400px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.services-Container img{
+  border-radius: 25px 25px 0px 0px;
+  margin:0;
+}
+.services-Container div{
+  margin: 1% 10% 15% 10%;
+  color: black;
+}
+.services-Container div h1{
+  font-size: 24px;
+  margin: 5% 0 5% 0;
+  color: black;
+}
+.services-Container div p{
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 10%;
+  color: black;
+}
+.services-Container div Button{
+  width:100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 18px;
+  color: white;
+}
+
+
 </style>
