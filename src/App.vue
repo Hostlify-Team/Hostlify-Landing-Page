@@ -23,10 +23,36 @@
 
     <!--4 services-->
 
-
-
-
-
+    <div class="services">
+      <h1>Services</h1>
+      <div class="container-SV">
+        <div class="services-Container">
+          <img src="src/assets/images/carne.png" alt="Food Service" />
+          <div>
+            <h1>Food Services</h1>
+            <p>Enter information you want to share with your guests about the food hall, as well as table reservation options and/or room service with personalized dishes.</p>
+            <Button label="Read More" class="p-button-raised"/>
+          </div>
+        </div>
+        <div class="services-Container">
+          <img src="src/assets/images/bed.png" alt="Food Service" />
+          <div>
+            <h1>Room maintenance</h1>
+            <p>Connect the room maintenance service with your guests to simplify their demands</p>
+            <Button label="Read More" class="p-button-raised"/>
+          </div>
+        </div>
+        <div class="services-Container">
+          <img src="src/assets/images/gimnasio.png" alt="Food Service" />
+          <div>
+            <h1>Recreation area</h1>
+            <p>Provide your guest with exact information on the recreational areas in the hotel, in this way your guest can plan their activities and even make reservations for their favorite recreational areas</p>
+            <Button label="Read More" class="p-button-raised"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="plans">
       <h1>Plans</h1>
       <div class="container-PL">
