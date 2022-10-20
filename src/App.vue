@@ -1,4 +1,12 @@
 <script>
+export default {
+  name: 'PageHome',
+  data(){
+    return{
+      showMenu:true,
+    }
+  }
+}
 </script>
 
 <template>
@@ -6,7 +14,8 @@
   <header class="top-header">
     <img src="/src/assets/images/Logo.png" height=130 alt="Logo Hostlify" />
     <nav class="navMain">
-      <ul>
+      <i class="pi pi-bars navMain-menu" @click="showMenu = !showMenu"></i>
+      <ul :class="`${showMenu ? 'navMain-mobile': ''}`">
         <Button label="Home" class="p-button-text"/>
         <Button label="About Us" class="p-button-text"/>
         <Button label="Services" class="p-button-text"/>
@@ -22,7 +31,7 @@
     <div class="main">
       <img class="mainBackground" src="/src/assets/images/fondo-principal.jpeg" alt="Logo principal Hostlify" />
       <div>
-        <h1>The best option as a hotel <br/> manager platflorm</h1>
+        <h1>The Best Option as a Hotel <br/> manager platflorm</h1>
         <Button label="Try it now" class="p-button-raised p-button-rounded"/>
       </div>
     </div>
@@ -716,4 +725,82 @@ Button{
   display: flex;
   justify-content: center;
 }
+
+.navMain-menu{
+  display:none !important;
+}
+
+@media  screen and (max-width: 600px) {
+
+  .navMain-mobile{
+    display:  none !important;
+  }
+
+  .navMain-menu{
+    display:block !important;
+  }
+  .top-header{
+    flex-direction:column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navMain{
+    margin:0;
+    text-align:center;
+  }
+
+  .navMain ul{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+  }
+
+  .main div h1{
+    font-size: 60px;
+  }
+
+  .services-Container{
+    width: 100%;
+  }
+
+  .priceCalculator-Container{
+    height:auto;
+  }
+
+  .content-box-container{
+    height: auto;
+    flex-direction: column;
+  }
+
+  .container-OT{
+    padding: 10px;
+  }
+
+  .contact-Container{
+    height:auto;
+  }
+
+  .contact-box-container{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .buttons-container{
+    margin-top:0;
+    padding: 0;
+    grid-template-columns: auto;
+
+  }
+
+  .content-box Button{
+    width:auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: auto;
+  }
+
+}
+
 </style>
