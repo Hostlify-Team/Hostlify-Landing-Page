@@ -5,38 +5,47 @@ export default {
     return{
       showMenu:true,
     }
-  }
+  },
+  methods: {
+    scrollToSection(section) {
+      this.$refs[section + 'Section'].scrollIntoView({ behavior: 'smooth' });
+    },
+    redirectToLink() {
+      window.open('https://hostlifype.netlify.app/', '_blank');
+    },
+  },
 }
 </script>
 
 <template>
 
   <header class="top-header">
-    <img src="/src/assets/images/Logo.png" height=130 alt="Logo Hostlify" />
+    <img src="/src/assets/images/Logo.png" height=80 alt="Logo Hostlify" />
     <nav class="navMain">
       <i class="pi pi-bars navMain-menu" @click="showMenu = !showMenu"></i>
       <ul :class="`${showMenu ? 'navMain-mobile': ''}`">
-        <Button label="Home" class="p-button-text"/>
-        <Button label="About Us" class="p-button-text"/>
-        <Button label="Services" class="p-button-text"/>
-        <Button label="Plans" class="p-button-text"/>
-        <Button label="Our Team" class="p-button-text"/>
-        <Button label="Contact" class="p-button-text"/>
+        <Button @click="scrollToSection('main')" class="p-button-text">Home</Button>
+        <Button @click="scrollToSection('about-us')" class="p-button-text">About Us</Button>
+        <Button @click="scrollToSection('services')" class="p-button-text">Services</Button>
+        <Button @click="scrollToSection('plans')" class="p-button-text">Plans</Button>
+        <Button @click="scrollToSection('our-team')" class="p-button-text">Our Team</Button>
+        <Button @click="scrollToSection('contact')" class="p-button-text">Contact</Button>
+
       </ul>
     </nav>
   </header>
 
   <div class="layout">
 
-    <div class="main">
+    <div class="main" ref="mainSection">
       <img class="mainBackground" src="/src/assets/images/fondo-principal.jpeg" alt="Logo principal Hostlify" />
       <div>
         <h1>The Best Option as a Hotel <br/> manager platflorm</h1>
-        <Button label="Try it now" class="p-button-raised p-button-rounded"/>
+        <Button @click="redirectToLink" label="Try it now" class="p-button-raised p-button-rounded"/>
       </div>
     </div>
 
-    <div class="about-us">
+    <div class="about-us" ref="about-usSection">
       <h1>About Us</h1>
       <div>
         <Image src="/src/assets/images/Logo.png" alt="Logo Hostlify" />
@@ -48,7 +57,7 @@ export default {
       </div>
     </div>
 
-    <div class="services">
+    <div class="services" ref="servicesSection">
       <h1>Services</h1>
       <div class="container-SV">
         <div class="services-Container">
@@ -56,7 +65,6 @@ export default {
           <div>
             <h1>Food Services</h1>
             <p>Enter information you want to share with your guests about the food hall, as well as table reservation options and/or room service with personalized dishes.</p>
-            <Button label="Read More" class="p-button-raised"/>
           </div>
         </div>
         <div class="services-Container">
@@ -64,7 +72,6 @@ export default {
           <div>
             <h1>Room maintenance</h1>
             <p>Connect the room maintenance service with your guests to simplify their demands</p>
-            <Button label="Read More" class="p-button-raised"/>
           </div>
         </div>
         <div class="services-Container">
@@ -72,13 +79,12 @@ export default {
           <div>
             <h1>Recreation area</h1>
             <p>Provide your guest with exact information on the recreational areas in the hotel, in this way your guest can plan their activities and even make reservations for their favorite recreational areas</p>
-            <Button label="Read More" class="p-button-raised"/>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="plans">
+    <div class="plans" ref="plansSection">
       <h1>Plans</h1>
       <div class="container-PL">
         <div class="plans-Container">
@@ -87,7 +93,7 @@ export default {
             <h1>Standar</h1>
             <h2>30 rooms</h2>
             <h3>150 S/ mo*</h3>
-            <Button label="Subscribe" class="p-button-raised"/>
+            <Button @click="redirectToLink" label="Subscribe" class="p-button-raised"/>
           </div>
         </div>
         <div class="plans-Container">
@@ -96,16 +102,16 @@ export default {
             <h1>Pro</h1>
             <h2>50 rooms</h2>
             <h3>250 S/ mo*</h3>
-            <Button label="Subscribe" class="p-button-raised"/>
+            <Button @click="redirectToLink" label="Subscribe" class="p-button-raised"/>
           </div>
         </div>
-        <div class="plans-Container">
+        <div class="plans-Container" >
           <div class="orange-box3"/>
           <div class="content-box">
             <h1>Premium</h1>
             <h2>Unlimited</h2>
             <h3>400 S/ mo*</h3>
-            <Button label="Subscribe" class="p-button-raised"/>
+            <Button @click="redirectToLink" label="Subscribe" class="p-button-raised"/>
           </div>
         </div>
       </div>
@@ -125,7 +131,7 @@ export default {
               <h1>Prices from S/6.50 per room</h1>
               <h2>Plans to satisfy each stage of your hotel</h2>
               <h3>S/97.50</h3>
-              <Button label="Subscribe" class="p-button-raised"/>
+              <Button @click="redirectToLink" label="Subscribe" class="p-button-raised"/>
             </div>
           </div>
         </div>
@@ -133,7 +139,7 @@ export default {
     </div>
   </div>
 
-  <div class="OurTeam">
+  <div class="OurTeam" ref="our-teamSection">
     <h1>OurTeam</h1>
     <div class="container-OT">
       <div class="ourTeam-Container">
@@ -181,23 +187,23 @@ export default {
     </div>
   </div>
 
-  <div class="contact">
+  <div class="contact" ref="contactSection">
     <h1>Contact</h1>
     <div class="container-C">
       <div class="contact-Container">
         <div class="contact-box-container">
           <div class="content-box-C">
               <span class="p-float-label">
-	              <InputText class="inputC" id="username" type="text" v-model="value" />
+	              <InputText class="inputC" style="background-color: #121212" id="username" type="text" v-model="value" />
                 <label for="username">Your name</label>
               </span>
             <span class="p-float-label">
-	              <InputText class="inputC" id="username" type="text" v-model="value" />
+	              <InputText class="inputC"  type="text" v-model="value" />
                 <label for="username">Email</label>
               </span>
             <span class="p-float-label">
-	              <InputText class="inputC-email" id="username" type="text" v-model="value" />
-                <label for="username">Message</label>
+	              <Textarea id="value" class="inputC-email"  type="text" v-model="value" />
+                <label for="value">Description</label>
               </span>
             <Button label="Send" class="p-button-raised"/>
           </div>
@@ -208,21 +214,12 @@ export default {
 
             </div>
             <div class="buttons-container">
-              <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="/src/assets/images/facebook.png" />
-              </Button>
-              <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="/src/assets/images/linkedin.png" />
-              </Button>
-              <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="/src/assets/images/twitter.png" />
-              </Button>
-              <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="/src/assets/images/google.png" />
-              </Button>
-              <Button type="button" class="p-button-outlined p-button-success">
-                <img alt="logo" src="/src/assets/images/instagram.png" />
-              </Button>
+              <Button icon="pi pi-facebook" type="button" />
+              <Button icon="pi pi-instagram" type="button" />
+              <Button icon="pi pi-twitter" type="button" />
+              <Button icon="pi pi-youtube" type="button" />
+              <Button icon="pi pi-linkedin" type="button" />
+
             </div>
           </div>
         </div>
@@ -266,7 +263,7 @@ Button{
   width: 100%;
   display: flex;
   align-items: center;
-  background: #011530;
+  background: #121212;
   height: 130px;
 }
 .top-header img{
@@ -290,19 +287,20 @@ Button{
 }
 .mainBackground{
   width: 100%;
-  height: 800px;
+  height: 554px;
+
 }
 .main div {
   display: flex;
   position: absolute;
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 5%;
   size: auto;
   flex-direction: column;
   justify-content: center;
 }
 .main div h1{
-  font-size: 92px;
+  font-size: 72px;
   text-shadow: 3px 3px black;
 }
 .main div Button{
@@ -311,7 +309,6 @@ Button{
   font-size: 24px;
   padding-top: 1%;
   padding-bottom: 1%;
-  color: white;
 }
 
 
@@ -320,7 +317,7 @@ Button{
 
 
 .about-us{
-  background: #011530;
+  background: #121212;
   text-align: center;
   padding: 3%;
 }
@@ -331,18 +328,15 @@ Button{
 }
 .about-us div{
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .about-us div Image{
   flex:30%;
 }
 .about-us div p{
   flex:70%;
-  background: white;
-  color:black;
   margin: auto 5% auto 5%;
-  font-size:28px;
+  font-size:23px;
   text-align: left;
   padding: 3%;
 }
@@ -353,7 +347,7 @@ Button{
 
 
 .services{
-  background: #011530;
+  background: #121212;
   text-align: center;
   padding: 3%;
 }
@@ -365,7 +359,7 @@ Button{
 .container-SV{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   gap: 50px;
   flex-wrap: wrap;
 }
@@ -409,7 +403,7 @@ Button{
 
 
 .plans{
-  background: #011530;
+  background: #121212;
   text-align: center;
   padding: 3%;
 }
@@ -421,7 +415,7 @@ Button{
 .container-PL{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   gap: 50px;
   flex-wrap: wrap;
 }
@@ -431,6 +425,7 @@ Button{
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  color: #181818;
 }
 .orange-box1{
   border-radius: 25px 25px 0px 0px;
@@ -490,8 +485,8 @@ Button{
 
 
 .priceCalculator{
-  background: #011530;
-  padding: 3%;
+  background: #121212;
+  padding: 15%;
 }
 .container-PC{
   display: flex;
@@ -590,7 +585,7 @@ Button{
 
 
 .OurTeam{
-  background: #011530;
+  background: #121212;
   text-align: center;
   padding: 3%;
 }
@@ -632,8 +627,9 @@ Button{
 
 
 .contact{
-  background: #011530;
+  background: #121212;
   padding: 3%;
+  font-family: 'Roboto', sans-serif;
 }
 .contact h1{
   color: #D6A049;
@@ -653,7 +649,6 @@ Button{
   flex-wrap: wrap;
 }
 .contact-box-container{
-  background: white;
   width: 100%;
   height: 500px;
   border-radius: 5px;
@@ -670,13 +665,16 @@ Button{
 }
 .p-float-label{
   margin-top: 7%;
+
 }
 .inputC{
   width: 100%;
+
 }
 .inputC-email{
   width: 100%;
   height: 150px;
+  background-color: #121212;
 }
 .content-box-C button{
   margin: 5% 0% 0% 25%;
@@ -699,11 +697,10 @@ Button{
   color: #D6A049;
 }
 .buttons-container{
-  display: grid;
-  gap: 20px;
+  display: flex;
+  justify-content: space-around;
   margin-top: 5%;
   padding: 0px 30px 40px 10px;
-  grid-template-columns: repeat(5,minmax(0,1fr));
 }
 .buttons-container Button{
   display: flex;
@@ -715,7 +712,7 @@ Button{
 
 
 .footer-container{
-  background: #011530;
+  background: #121212;
 }
 .footer-container p{
   text-align: center;
